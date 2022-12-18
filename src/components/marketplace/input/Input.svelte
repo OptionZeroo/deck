@@ -42,7 +42,7 @@
                     bind:value
                     type="text"
                     placeholder={inputObject.label}
-                    class="input input-bordered h-10 pr-10 focus:ring-0 text-csgray-700"
+                    class="input input-bordered h-10 pr-10 focus:ring-0 text-csgray-700 w-full border-b border-csgray-200 rounded-md"
                     class:focus:border-pumpkin-500={(!$validity.valid &&
                         startValidation) ||
                         error}

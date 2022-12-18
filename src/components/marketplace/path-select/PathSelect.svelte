@@ -90,7 +90,7 @@
                     name="project_path"
                     type="text"
                     placeholder="Click to select project path"
-                    class="input input-bordered h-10 pr-10 focus:ring-0 cursor-pointer text-csgray-700"
+                    class="input input-bordered h-10 pr-10 focus:ring-0 cursor-pointer text-csgray-700 w-full border-b border-csgray-200 rounded-md"
                     class:focus:border-pumpkin-500={isInvalidInput}
                     class:border-pumpkin-500={isInvalidInput}
                     class:placeholder-pumpkin-600={isInvalidInput}

@@ -13,7 +13,7 @@
 </script>
 
 <div
-    class="dropdown dropdown-hover custom-dropdown dropdown-end cursor-pointer"
+    class="dropdown dropdown-hover custom-dropdown dropdown-end cursor-pointer relative"
 >
     <div
         class="relative bg-beach-200 p-4 shadow-sm rounded-lg overflow-hidden hover:bg-beach-300 ease-transition"
@@ -45,7 +45,7 @@
     </div>
     <ul
         tabindex="0"
-        class="text-sm text-chillgray-500 p-1 shadow menu dropdown-content bg-base-100 rounded-lg w-auto overflow-visible"
+        class="text-sm text-chillgray-500 p-1 shadow menu dropdown-content bg-base-100 rounded-lg w-auto overflow-visible absolute top-full ease-transition bg-white opacity-0 -z-0"
     >
         <li class="w-full dropdown dropdown-right group overflow-visible">
             <!-- svelte-ignore a11y-missing-attribute -->
@@ -53,7 +53,7 @@
                 on:click={() => {
                     shell.openExternal(`https:${stack}.stacks.run`);
                 }}
-                class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2"
+                class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2 items-center w-full rounded-md"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@
                         `http:${$settingsStore.host}:${httpPort}`
                     );
                 }}
-                class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2"
+                class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2 items-center w-full rounded-md"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

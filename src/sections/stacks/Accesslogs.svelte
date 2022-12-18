@@ -32,7 +32,7 @@
 </script>
 
 <div
-    class="dropdown dropdown-hover custom-dropdown dropdown-end cursor-pointer"
+    class="dropdown dropdown-hover custom-dropdown dropdown-end cursor-pointer relative"
 >
     <div
         class="
@@ -88,7 +88,7 @@
     </div>
     <ul
         tabindex="0"
-        class="text-sm text-chillgray-500 p-1 shadow menu dropdown-content bg-base-100 rounded-lg w-auto"
+        class="text-sm text-chillgray-500 p-1 shadow menu dropdown-content bg-base-100 rounded-lg w-auto absolute top-full ease-transition bg-white opacity-0 -z-0"
     >
         {#each containers as container}
             <li class="w-full group">
@@ -97,7 +97,7 @@
                     on:click={() => {
                         accessLogs(container);
                     }}
-                    class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2"
+                    class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2 items-center w-full rounded-md"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
