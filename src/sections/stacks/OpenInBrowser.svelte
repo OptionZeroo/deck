@@ -45,7 +45,7 @@
     </div>
     <ul
         tabindex="0"
-        class="text-sm text-chillgray-500 p-1 shadow menu dropdown-content bg-base-100 rounded-lg w-auto overflow-visible absolute top-full ease-transition bg-white opacity-0 -z-0"
+        class="text-sm text-chillgray-500 p-1 shadow menu dropdown-content bg-base-100 rounded-lg w-auto overflow-visible absolute top-full ease-transition bg-white opacity-0 -z-0 dark:bg-darkgray-800"
     >
         <li class="w-full dropdown dropdown-right group overflow-visible">
             <!-- svelte-ignore a11y-missing-attribute -->

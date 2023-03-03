@@ -96,7 +96,7 @@
             {#await formObject}
                 <!-- <ContentLoader /> -->
             {:then res}
-                <div class="column-count gap-6 w-full">
+                <div class="column-count gap-6 w-full relative hover:z-10">
                     <UpdateForm
                         bind:isStackUpdated
                         {projectName}

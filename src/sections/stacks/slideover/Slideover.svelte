@@ -240,7 +240,7 @@
                                     {#if _.get(stack, "APP_CODE_PATH_HOST", false)}
                                         <button
                                             type="button"
-                                            class="sidebar-action-btn border-btn-azure ease-transition"
+                                            class="sidebar-action-btn border-btn-azure ease-transition dark:bg-darkgray-950"
                                             on:click={() => {
                                                 openCodePath(
                                                     stack.APP_CODE_PATH_HOST
@@ -267,7 +267,7 @@
 
                                         <button
                                             type="button"
-                                            class="sidebar-action-btn border-btn-azure ease-transition"
+                                            class="sidebar-action-btn border-btn-azure ease-transition dark:bg-darkgray-950"
                                             on:click={() => {
                                                 // open(stack.APP_CODE_PATH_HOST);
                                                 openEditor(
@@ -292,7 +292,7 @@
                                             );
                                         }}
                                         type="button"
-                                        class="sidebar-action-btn border-btn-island ease-transition"
+                                        class="sidebar-action-btn border-btn-island ease-transition dark:bg-darkgray-950"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -318,7 +318,7 @@
                                                 );
                                             }}
                                             type="button"
-                                            class="sidebar-action-btn border-btn-chillindigo ease-transition"
+                                            class="sidebar-action-btn border-btn-chillindigo ease-transition dark:bg-darkgray-950"
                                         >
                                             <!-- <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +343,7 @@
 
                                     <button
                                         type="button"
-                                        class="sidebar-action-btn border-btn-azure ease-transition"
+                                        class="sidebar-action-btn border-btn-azure ease-transition dark:bg-darkgray-950"
                                         on:click={() => {
                                             restart(projectName);
                                         }}
@@ -367,7 +367,7 @@
 
                                     <button
                                         type="button"
-                                        class="sidebar-action-btn border-btn-island ease-transition"
+                                        class="sidebar-action-btn border-btn-island ease-transition dark:bg-darkgray-950"
                                         on:click={() => {
                                             openEditor(
                                                 getStackPath(projectName),
@@ -395,7 +395,7 @@
                                     <button
                                         on:click={askForDestory}
                                         type="button"
-                                        class="sidebar-action-btn border-btn-chillcerise ease-transition"
+                                        class="sidebar-action-btn border-btn-chillcerise ease-transition dark:bg-darkgray-950"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"

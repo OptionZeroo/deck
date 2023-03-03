@@ -44,7 +44,7 @@
 
 <button
     type="button"
-    class="sidebar-action-btn hover:bg-azure-600 hover:text-white hover:border-transparent border-btn-gray transition ease-in-out duration-500"
+    class="sidebar-action-btn hover:bg-azure-600 hover:text-white hover:border-transparent border-btn-gray transition ease-in-out duration-500 dark:bg-darkgray-1000 dark:text-csgray-400 "
     on:click={() => {
         executePowerTools();
     }}

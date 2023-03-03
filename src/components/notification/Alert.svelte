@@ -20,7 +20,7 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="rounded-md bg-{bgColor}-50 p-4">
+<div class="rounded-md bg-{bgColor}-50 p-4 dark:bg-darkgray-950">
     <div class="flex">
         <div class="flex-shrink-0">
             {#if type == "warning"}
@@ -86,11 +86,11 @@
             {/if}
         </div>
         <div class="ml-3">
-            <h3 class="text-sm font-medium text-{bgColor}-800">
+            <h3 class="text-sm font-medium text-{bgColor}-800 dark:text-csgray-400">
                 {title}
             </h3>
             <div class="mt-2 text-sm text-{bgColor}-700">
-                <p>
+                <p class="dark:text-blue-400">
                     {description}
                 </p>
             </div>
