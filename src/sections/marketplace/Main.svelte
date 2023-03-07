@@ -59,10 +59,10 @@
 
         <!-- stack details -->
 
-        <div class="p-6 overflow-y-auto rounded-md">
+        <div class="p-6 overflow-y-auto dark:bg-darkgray-1000">
             {#if installClickStatus}
                 <!-- Installation form -->
-                <div class="bg-csgray-50 p-5 rounded-lg relative">
+                <div class="bg-csgray-50 p-5 rounded-lg relative dark:bg-darkgray-950">
                     {#await settings}
                         <ContentLoader />
                     {:then res}
@@ -93,7 +93,7 @@
                 </div>
             {:else}
                 <!-- Installation doc -->
-                <div class="bg-csgray-50 p-5 rounded-lg text-csgray-700">
+                <div class="bg-csgray-50 p-5 rounded-lg text-csgray-700 dark:bg-darkgray-950">
                     {#await readmeResult}
                         <ContentLoader />
                     {:then readMeData}

@@ -1,4 +1,4 @@
-<main class="flex-1 overflow-y-auto">
+<main class="flex-1 overflow-y-auto dark:bg-darkgray-1000">
     <!-- Primary column -->
     <section class="max-w-5xl mx-auto p-12">
         <div>
@@ -12,10 +12,10 @@
                     <div class="border-l-4 mr-4 h-full border-csgray-300 border-dashed"></div>
                  </div>
               </div>
-              <div class="flex-auto rounded bg-white">
+              <div class="flex-auto rounded bg-white dark:bg-darkgray-950">
                  <div class="flex md:flex-row flex-col items-center">
                     <div class="flex-auto">
-                       <div class="pl-3 text-sm text-chillgray-500 m-auto">Click from the list or search a stack for your project, hit Install</div>
+                       <div class="pl-3 text-sm text-chillgray-500 m-auto dark:text-csgray-300">Click from the list or search a stack for your project, hit Install</div>
                     </div>
                     <div class="md:w-96 w-full p-5"><img src="img/xxx.png" alt="step 1" class="object-scale-down"></div>
                  </div>
@@ -40,10 +40,10 @@
                     <div class="border-l-4 ml-4 h-full border-csgray-300 border-dashed"></div>
                  </div>
               </div>
-              <div class="flex-auto rounded bg-white">
+              <div class="flex-auto rounded bg-white dark:bg-darkgray-950">
                  <div class="flex md:flex-row flex-col items-center">
                     <div class="flex-auto">
-                       <div class="pl-3 text-sm text-chillgray-500 m-auto">Enter project name, path and other informations and hit save.</div>
+                       <div class="pl-3 text-sm text-chillgray-500 m-auto dark:text-csgray-300">Enter project name, path and other informations and hit save.</div>
                     </div>
                     <div class="md:w-96 w-full p-5"><img src="img/xxx2.png" alt="step 2" class="object-scale-down"></div>
                  </div>
@@ -66,10 +66,10 @@
                  </div>
                  
               </div>
-              <div class="flex-auto rounded bg-white">
+              <div class="flex-auto rounded bg-white dark:bg-darkgray-950">
                  <div class="flex md:flex-row flex-col items-center">
                     <div class="flex-auto">
-                       <div class="pl-3 text-sm text-chillgray-500 m-auto">
+                       <div class="pl-3 text-sm text-chillgray-500 m-auto dark:text-csgray-300">
                            Start your project from the list, it might take a few minutes to finish
                        </div>
                     </div>

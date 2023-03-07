@@ -8,14 +8,14 @@
 
 <div class="pt-6">
     <p
-        class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
+        class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200 dark:text-csgray-300 dark:border-slate-50/[0.06]"
     >
         {inputObject.label}
     </p>
     <div class="grid grid-cols-1 items-start">
         <div class="col-span-1 form-control p-0">
-            <label class="cursor-pointer label">
-                <span class="label-text text-csgray-500 text-xs"
+            <label class="cursor-pointer label flex w-full justify-between items-center">
+                <span class="label-text text-csgray-500 text-xs dark:text-csgray-400"
                     >{inputObject.hint
                         ? inputObject.hint
                         : inputObject.label}</span
@@ -25,7 +25,7 @@
                     type="button"
                     class="{value
                         ? 'bg-azure-600'
-                        : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                        : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0 dark:bg-darkgray-1000 dark:border-slate-50/[0.06]"
                     role="switch"
                     aria-checked="false"
                 >
@@ -34,7 +34,7 @@
                     <span
                         class="{value
                             ? 'translate-x-5'
-                            : 'translate-x-0'}  pointer-events-none relative inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"
+                            : 'translate-x-0'}  pointer-events-none relative inline-block h-5 w-5 rounded-full bg-white dark:bg-darkgray-800 shadow transform ring-0 transition ease-in-out duration-200"
                     >
                         <!-- Enabled: "opacity-0 ease-out duration-100", Not Enabled: "opacity-100 ease-in duration-200" -->
                         <span

@@ -5,6 +5,6 @@
             src="img/sleeping-dog.png"
             alt="logo"
         />
-        <h3 class="">No README found</h3>
+        <h3 class="dark:text-csgray-300">No README found</h3>
     </div>
 </div>

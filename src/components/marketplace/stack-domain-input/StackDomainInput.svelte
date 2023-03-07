@@ -26,13 +26,13 @@
 </script>
 
 <p
-    class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
+    class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200 dark:text-csgray-300 dark:border-slate-50/[0.06]"
 >
     Your stack URL
 </p>
 <div class="grid grid-cols-2 gap-2 items-start">
     <div class="col-span-1">
-        <span class="text-csgray-500 text-xs"
+        <span class="text-csgray-500 text-xs dark:text-csgray-400"
             >Enter a name for this stack, lowercase with dashes preferred. Make
             sure it's unique to your stacks</span
         >
@@ -41,7 +41,7 @@
         <div class="max-w-full">
             <div class="flex rounded-md">
                 <span
-                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-csgray-200 bg-csgray-50 text-csgray-500 sm:text-sm"
+                    class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-csgray-200 bg-csgray-50 text-csgray-500 sm:text-sm dark:bg-darkgray-1000 dark:border-slate-50/[0.06]"
                     class:focus:border-pumpkin-500={(!$validity.valid &&
                         startValidation) ||
                         error}
@@ -69,7 +69,7 @@
                         name="stack_name"
                         type="text"
                         placeholder="my-awesome-app"
-                        class="input w-full input-bordered border-b border-csgray-200 rounded-none focus:ring-0 h-10 text-csgray-700"
+                        class="input w-full input-bordered border-b border-csgray-200 rounded-none focus:ring-0 h-10 text-csgray-700 dark:text-csgray-500 dark:bg-darkgray-1000 dark:border-slate-50/[0.06]"
                         class:focus:border-pumpkin-500={(!$validity.valid &&
                             startValidation) ||
                             error}
@@ -86,7 +86,7 @@
                     />
                 </div>
                 <span
-                    class="inline-flex items-center px-3 rounded-r-md border border-l-0 border-csgray-200 bg-csgray-50 text-csgray-500 sm:text-sm {errorClass}"
+                    class="inline-flex items-center px-3 rounded-r-md border border-l-0 border-csgray-200 bg-csgray-50 dark:bg-darkgray-1000 text-csgray-500 dark:border-slate-50/[0.06] sm:text-sm {errorClass}"
                     class:focus:border-pumpkin-500={(!$validity.valid &&
                         startValidation) ||
                         error}

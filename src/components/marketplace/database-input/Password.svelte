@@ -1,6 +1,6 @@
 <script>
     import _ from "lodash";
-    import { requiredValidator } from "./../../../utils/validator/Validators.js";
+    import { requiredValidator } from "./../../../utils/validator/Validators.js"0;
     import { createFieldValidator } from "./../../../utils/validator/Validation.js";
 
     export let error;
@@ -22,7 +22,7 @@
         name="db_password"
         type="password"
         placeholder="Password"
-        class="input input-bordered h-10 focus:ring-0  text-csgray-700 w-full border-b border-csgray-200 rounded-md"
+        class="input input-bordered h-10 focus:ring-0 text-csgray-700 w-full border-b border-csgray-200 rounded-md dark:bg-darkgray-1000 dark:border-slate-50/[0.06] dark:text-csgray-500"
         class:focus:border-pumpkin-500={(!$validity.valid && startValidation) ||
             error}
         class:border-pumpkin-500={(!$validity.valid && startValidation) ||

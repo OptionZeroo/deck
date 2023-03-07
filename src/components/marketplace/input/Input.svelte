@@ -21,13 +21,13 @@
 
 <div class="pt-6">
     <p
-        class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
+        class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200 dark:text-csgray-300 dark:border-slate-50/[0.06]"
     >
         {inputObject.label}
     </p>
     <div class="grid grid-cols-2 gap-4 items-start">
         <div class="col-span-1">
-            <span class="text-csgray-500 text-xs">{inputObject.hint}</span>
+            <span class="text-csgray-500 text-xs dark:text-csgray-400">{inputObject.hint}</span>
         </div>
         <div class="col-span-1">
             <div class="form-control relative">
@@ -42,7 +42,7 @@
                     bind:value
                     type="text"
                     placeholder={inputObject.label}
-                    class="input input-bordered h-10 pr-10 focus:ring-0 text-csgray-700 w-full border-b border-csgray-200 rounded-md"
+                    class="input input-bordered h-10 pr-10 focus:ring-0 text-csgray-700 w-full border-b border-csgray-200 rounded-md dark:bg-darkgray-1000 dark:border-slate-50/[0.06]"
                     class:focus:border-pumpkin-500={(!$validity.valid &&
                         startValidation) ||
                         error}

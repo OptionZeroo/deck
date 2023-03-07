@@ -14,7 +14,7 @@
             href="/marketplace/{image['@AppID']}"
             use:active
             active-class="bg-chillgray-100"
-            class="select-none flex flex-1 items-center justify-center p-2 rounded-lg hover:bg-chillgray-100 ease-transition"
+            class="select-none flex flex-1 items-center justify-center p-2 rounded-lg hover:bg-chillgray-100 dark:hover:bg-chillgray-900 ease-transition"
         >
             <span
                 class="inline-block relative border bg-white rounded-lg p-1.5 shadow-xs"
@@ -31,7 +31,7 @@
                         class="col-span-1 label-text grid grid-cols-12 gap-0.5 items-center"
                     >
                         <span
-                            class="col-span-11 text-sm font-medium text-csgray-700 truncate pr-2"
+                            class="col-span-11 text-sm font-medium text-csgray-700 dark:text-csgray-300 truncate pr-2"
                             >{image["@AppName"]}</span
                         >
                         <span class="col-span-1 flex justify-end">

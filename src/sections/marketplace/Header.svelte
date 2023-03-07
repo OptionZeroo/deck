@@ -37,7 +37,7 @@
 </script>
 
 <!-- stack header -->
-<div class="bg-csgray-50 py-4 px-6">
+<div class="bg-csgray-50 py-4 px-6 dark:bg-darkgray-950">
     <div class="w-full mx-auto flex items-center justify-between">
         <div class="flex items-center space-x-5">
             <div class="flex-shrink-0">
@@ -54,12 +54,12 @@
             <div class="flex flex-col justify-center">
                 <span class="flex flex-row gap-2 items-center">
                     <h1
-                        class="text-lg font-semibold text-csgray-700 subpixel-antialiased"
+                        class="text-lg font-semibold text-csgray-700 subpixel-antialiased dark:text-csgray-300"
                     >
                         {_.get(dockerImage, "@AppName", "App name empty")}
                     </h1>
                 </span>
-                <p class="text-xs text-csgray-500 mb-1 pr-3">
+                <p class="text-xs text-csgray-500 dark:text-csgray-400 mb-1 pr-3">
                     {_.get(dockerImage, "@Description", "")}
                 </p>
 

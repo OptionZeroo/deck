@@ -9,6 +9,11 @@ body {
     border-color: #570df8;
     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.1), 0 0 3px -1px rgba(0, 0, 0, 0.05);
 }
+.dark .custom-radio input:checked + label {
+    background-color: #1f2937;
+    border-color: #1b1f25;
+    box-shadow: none;
+}
 .custom-radio input:checked + label .text-gray-400 {
     color: #2d2f37;
 }
@@ -47,7 +52,6 @@ body {
     border-width: 10px;
     margin-top: -10px;
 }
-
 .cms-content h1 {
     font-weight: 600;
     font-size: 1.6rem;
@@ -55,7 +59,6 @@ body {
     color: #444;
     margin-bottom: 1.1rem;
 }
-
 .cms-content h2 {
     font-weight: 600;
     font-size: 1.3rem;
@@ -63,7 +66,6 @@ body {
     color: #444;
     margin-bottom: 10px;
 }
-
 .cms-content h3 {
     font-weight: 600;
     font-size: 1.1rem;
@@ -71,7 +73,6 @@ body {
     color: #444;
     margin-bottom: 10px;
 }
-
 .cms-content h4 {
     font-weight: 600;
     font-size: 1rem;
@@ -79,7 +80,6 @@ body {
     color: #444;
     margin-bottom: 10px;
 }
-
 .cms-content h5 {
     font-weight: 600;
     font-size: 1rem;
@@ -87,7 +87,6 @@ body {
     color: #444;
     margin-bottom: 10px;
 }
-
 .cms-content h6 {
     font-weight: 600;
     font-size: 1rem;
@@ -95,7 +94,6 @@ body {
     color: #444;
     margin-bottom: 10px;
 }
-
 .cms-content,
 .cms-content p,
 .cms-content ul,
@@ -107,7 +105,6 @@ body {
     line-height: 1.25rem;
     color: #5c5b5c;
 }
-
 .cms-content p,
 .cms-content ul,
 .cms-content ol,
@@ -116,7 +113,6 @@ body {
 .cms-content pre {
     margin-bottom: 1rem;
 }
-
 .cms-content p strong,
 .cms-content ul strong,
 .cms-content ol strong,
@@ -127,7 +123,6 @@ body {
 .cms-content table strong {
     font-weight: 600;
 }
-
 .cms-content ul ul,
 .cms-content ul ol,
 .cmscontent ol ul,
@@ -135,65 +130,49 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 .cms-content ul li,
 .cms-content ol li {
     margin: 6px 0;
 }
-
 .cms-content ul > li {
     list-style: disc;
     list-style-position: inside;
     padding-left: 0;
     margin-left: 10px;
 }
-
 .cms-content ol > li {
     list-style: decimal;
     list-style-position: inherit;
     padding-left: 0;
     margin-left: 15px;
 }
-
 .cms-content a {
     color: #5c5b5c;
     text-decoration: none;
 }
-
 .cms-content a:hover {
     color: #0b89d3;
     text-decoration: underline;
 }
-
 .cms-content table {
     border: solid 1px #5b5b63;
     border-collapse: collapse;
     vertical-align: top;
 }
-
-.cms-content table th,
-.cms-content table td {
+.cms-content table th, .cms-content table td {
     padding: 5px 8px;
     border: solid 1px #5b5b63;
 }
-
 .cms-content table th {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     vertical-align: middle;
     text-align: left;
 }
-
-.cms-content table thead th {
+.cms-content table thead th,.cms-content table tbody th {
     background: #444444;
     color: #fff;
 }
-
-.cms-content table tbody th {
-    background: #444444;
-    color: #fff;
-}
-
 .cms-content blockquote {
     font-size: 0.75rem;
     line-height: 1.25rem;
@@ -201,11 +180,9 @@ body {
     padding-left: 15px;
     border-left: 4px solid #dfe2e5;
 }
-
 .cms-content blockquote p:last-child {
     margin-bottom: 0;
 }
-
 .cms-content pre {
     background-color: #f6f8fa;
     padding: 15px;
@@ -220,7 +197,15 @@ body {
 .cms-content pre code {
     color: #17141f;
 }
-
+.dark .cms-content table thead th, .dark .cms-content table tbody th, .dark .cms-content h1, .dark .cms-content h2, .dark .cms-content h3, .dark .cms-content h4, .dark .cms-content h5, .dark .cms-content h6 {
+    color: #d4d4d8;
+}
+.dark .cms-content, .cms-content p, .dark .cms-content ul, .dark .cms-content ol, .dark .cms-content table, .dark .cms-content blockquote p, .dark .cms-content pre, .dark .cms-content pre code {
+    color: #a1a1aa;
+}
+.dark .cms-content pre {
+    background-color: #1f2937;
+}
 .no-readme {
     height: calc(100vh - 210px);
 }

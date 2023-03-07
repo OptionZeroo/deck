@@ -70,13 +70,13 @@
 
 <div class="pt-6">
     <p
-        class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
+        class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200 dark:text-csgray-300 dark:border-slate-50/[0.06]"
     >
         Project path
     </p>
     <div class="grid grid-cols-2 gap-4 items-start">
         <div class="col-span-1">
-            <span class="text-csgray-500 text-xs"
+            <span class="text-csgray-500 text-xs dark:text-csgray-400"
                 >The selected path is where your codes are, use an existing
                 project path or a new one. You may open up this path in your
                 code editor to do changes in real time
@@ -90,7 +90,7 @@
                     name="project_path"
                     type="text"
                     placeholder="Click to select project path"
-                    class="input input-bordered h-10 pr-10 focus:ring-0 cursor-pointer text-csgray-700 w-full border-b border-csgray-200 rounded-md"
+                    class="input input-bordered h-10 pr-10 focus:ring-0 cursor-pointer text-csgray-700 w-full border-b border-csgray-200 rounded-md dark:bg-darkgray-1000 dark:border-slate-50/[0.06]"
                     class:focus:border-pumpkin-500={isInvalidInput}
                     class:border-pumpkin-500={isInvalidInput}
                     class:placeholder-pumpkin-600={isInvalidInput}

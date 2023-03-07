@@ -917,7 +917,7 @@
                                 <div class="mt-0">
                                     <form>
                                         <span
-                                            class="text-csgray-500 text-xs mb-2 block leading-6"
+                                            class="text-csgray-500 text-xs dark:text-csgray-400 mb-2 block leading-6"
                                             >Your friend needs to enable Flights
                                             on stack settings and share you the
                                             stack ID</span

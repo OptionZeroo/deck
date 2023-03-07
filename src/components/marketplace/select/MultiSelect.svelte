@@ -62,13 +62,13 @@
     <div role="group" aria-labelledby="label-notifications">
         <label
             for="username"
-            class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
+            class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200 dark:text-csgray-300 dark:border-slate-50/[0.06]"
         >
             {inputObject.label}
         </label>
         <div class="grid grid-cols-2 gap-4 items-start">
             <div class="col-span-1">
-                <span class="text-csgray-500 text-xs">{inputObject.hint}</span>
+                <span class="text-csgray-500 text-xs dark:text-csgray-400">{inputObject.hint}</span>
             </div>
             <div class="col-span-1">
                 <div class="w-full flex flex-col items-center">
@@ -76,7 +76,7 @@
                         <div class="flex flex-col items-center relative">
                             <div class="w-full">
                                 <div
-                                    class="my-2 p-1 h-10 bg-white flex border border-csgray-200 rounded-lg"
+                                    class="my-2 p-1 h-10 bg-white flex border border-csgray-200 dark:bg-darkgray-1000 dark:border-slate-50/[0.06] rounded-lg"
                                 >
                                     <div class="flex flex-auto flex-wrap" />
                                     <!-- placeholder={inputObject.label} -->
@@ -86,10 +86,10 @@
                                         }}
                                         bind:value={searchTerm}
                                         placeholder={selectedText}
-                                        class="p-1 px-2 pl-3 appearance-none outline-none w-full text-csgray-800 text-sm"
+                                        class="p-1 px-2 pl-3 appearance-none outline-none w-full text-csgray-800 text-sm dark:bg-darkgray-1000"
                                     />
                                     <div
-                                        class="text-csgray-300 w-8 text-center py-1 border-l flex items-center justify-items-center border-csgray-200"
+                                        class="text-csgray-300 w-8 text-center py-1 border-l flex items-center justify-items-center border-csgray-200 dark:border-slate-50/[0.06]"
                                     >
                                         <button
                                             on:click={(e) => {
@@ -147,12 +147,12 @@
                                 }}
                                 class="{listShow != true
                                     ? 'hidden'
-                                    : ''}  absolute shadow bg-white top-14 z-40 w-full rounded-md max-h-select overflow-y-auto max-h-60"
+                                    : ''}  absolute shadow bg-white dark:bg-darkgray-1000 dark:border dark:border-slate-50/[0.06] top-14 z-40 w-full rounded-md max-h-select overflow-y-auto max-h-60"
                             >
                                 <!-- Object.entries(inputObject.values) -->
                                 {#each Object.entries(valueOptions) as [key1, value1]}
                                     <div
-                                        class="flex flex-row-reverse items-center relative tail-checkbox px-3 py-3 hover:bg-chillgray-100"
+                                        class="flex flex-row-reverse items-center relative tail-checkbox px-3 py-3 hover:bg-chillgray-100 dark:hover:bg-chillgray-900"
                                     >
                                         <div
                                             class="flex flex-wrap items-center z-10"

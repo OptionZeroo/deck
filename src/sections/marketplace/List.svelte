@@ -26,7 +26,7 @@
 </script>
 
 <!-- Secondary column (hidden on smaller screens) -->
-<aside class="w-1/4 bg-white shadow-sm lg:block">
+<aside class="w-1/4 bg-white shadow-sm lg:block dark:bg-darkgray-1000 dark:border-r dark:border-slate-50/[0.06]">
     <Search on:termChange={search} bind:searchTerm />
 
     {#if _.isArray(images) && images.length > 0}

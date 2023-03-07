@@ -27,7 +27,7 @@
         name="db_name"
         type="text"
         placeholder="Database"
-        class="input input-bordered h-10 focus:ring-0 text-csgray-700 w-full border-b border-csgray-200 rounded-md"
+        class="input input-bordered h-10 focus:ring-0 text-csgray-700 w-full border-b border-csgray-200 rounded-md dark:bg-darkgray-1000 dark:border-slate-50/[0.06] dark:text-csgray-500"
         class:focus:border-pumpkin-500={isValid}
         class:border-pumpkin-500={isValid}
         class:placeholder-pumpkin-600={isValid}

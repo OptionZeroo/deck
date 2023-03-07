@@ -49,19 +49,19 @@
     <div role="group" aria-labelledby="label-notifications">
         <label
             for="username"
-            class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
+            class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200 dark:text-csgray-300 dark:border-slate-50/[0.06]"
         >
             {inputObject.label}
         </label>
         <div class="grid grid-cols-2 gap-4 items-start">
             <div class="col-span-1">
-                <span class="text-csgray-500 text-xs">{inputObject.hint}</span>
+                <span class="text-csgray-500 text-xs dark:text-csgray-400">{inputObject.hint}</span>
             </div>
             <div class="col-span-1">
                 <div class="w-full">
                     <div class="grid grid-flow-col auto-cols-max gap-4">
                         {#each Object.entries(inputObject.values) as [key1, value1]}
-                            <div class=" custom-radio">
+                            <div class="custom-radio">
                                 <div class="w-full">
                                     <input
                                         on:change={onChange}
@@ -74,7 +74,7 @@
                                         use:validate={value}
                                     />
                                     <label
-                                        class="w-full cursor-pointer bg-white border border-grey-200 px-4 h-10 rounded-lg flex items-center text-sm font-medium relative"
+                                        class="w-full cursor-pointer bg-white border border-grey-200 px-4 h-10 rounded-lg flex items-center text-sm font-medium relative dark:bg-darkgray-1000 dark:border-slate-50/[0.06]"
                                         class:border-pumpkin-500={isInvalidInput}
                                         class:placeholder-pumpkin-600={isInvalidInput}
                                         class:text-pumpkin-600={isInvalidInput}
