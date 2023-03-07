@@ -1,6 +1,6 @@
 <script>
     import _ from "lodash";
-    import { requiredValidator } from "./../../../utils/validator/Validators.js"0;
+    import { requiredValidator } from "./../../../utils/validator/Validators.js";
     import { createFieldValidator } from "./../../../utils/validator/Validation.js";
 
     export let error;
