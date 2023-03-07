@@ -59,7 +59,7 @@
             </div>
             <div class="col-span-1">
                 <div class="w-full">
-                    <div class="grid grid-flow-col auto-cols-max gap-4">
+                    <div class="flex flex-wrap gap-3">
                         {#each Object.entries(inputObject.values) as [key1, value1]}
                             <div class="custom-radio">
                                 <div class="w-full">

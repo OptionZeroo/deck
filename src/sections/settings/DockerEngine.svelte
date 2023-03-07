@@ -41,19 +41,20 @@
             flex flex-col
             relative
             overflow-hidden
+            dark:bg-darkgray-1000
         "
     >
         <div
             class="flex flex-col gap-4 justify-center items-center py-12 container mx-auto"
         >
             <div
-                class="flex items-center p-6 justify-between bg-white rounded-md border border-csgray-200 gap-6 w-3/4"
+                class="flex items-center p-6 justify-between bg-white dark:bg-darkgray-950 dark:bg-g rounded-md border border-csgray-200 dark:border-slate-50/[0.06] gap-6 w-3/4"
             >
                 <div class="min-w-0 flex-1 text-sm">
                     <label for="remote-engine" class="cursor-pointer">
                         <span class="flex-grow flex flex-col">
                             <span
-                                class="text-sm font-medium text-csgray-900"
+                                class="text-sm font-medium text-csgray-900 dark:text-csgray-400"
                                 id="availability-label">Remote engine</span
                             >
                             <span
@@ -80,11 +81,11 @@
 
             {#if $settingsStore.remoteEngine === true && $settingsStore.host}
                 <div
-                    class="flex items-center p-6 justify-between bg-white rounded-md border border-csgray-200 gap-6 w-3/4"
+                    class="flex items-center p-6 justify-between bg-white dark:bg-darkgray-950 rounded-md border border-csgray-200 dark:border-slate-50/[0.06] gap-6 w-3/4"
                 >
                     <span class="flex-grow flex flex-col">
                         <span
-                            class="text-sm font-medium text-csgray-900"
+                            class="text-sm font-medium text-csgray-900 dark:text-csgray-400"
                             id="availability-label">API endpoint</span
                         >
                         <span

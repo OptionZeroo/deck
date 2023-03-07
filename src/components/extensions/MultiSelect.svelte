@@ -224,7 +224,7 @@
         <ul
             transition:fly={{ duration: 200, y: 5 }}
             on:mousedown|preventDefault={handleOptionMousedown}
-            class="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
+            class="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm dark:bg-darkgray-800"
             tabindex="-1"
             role="listbox"
             aria-labelledby="listbox-label"
@@ -232,7 +232,7 @@
         >
             {#each filtered as option}
                 <li
-                    class="options text-csgray-900 cursor-default select-none relative py-3 pl-3 pr-10 hover:bg-chillgray-100"
+                    class="options text-csgray-900 cursor-default select-none relative py-3 pl-3 pr-10 hover:bg-chillgray-100 dark:hover:bg-chillgray-900"
                     class:selected={selected[option.value]}
                     class:active={activeOption === option}
                     data-value={option.value}

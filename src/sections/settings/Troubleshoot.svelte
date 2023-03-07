@@ -255,17 +255,18 @@
             flex flex-col
             relative
             overflow-hidden
+            dark:bg-darkgray-1000
         "
     >
         <div
             class="flex flex-col gap-4 justify-center items-center px-4 py-12 container mx-auto"
         >
             <div
-                class="flex items-center p-6 justify-between bg-white rounded-md border border-csgray-200 gap-6 w-3/4"
+                class="flex items-center p-6 justify-between bg-white dark:bg-darkgray-950 rounded-md border border-csgray-200 dark:border-slate-50/[0.06] gap-6 w-3/4"
             >
                 <span class="flex-grow flex flex-col">
                     <span
-                        class="text-sm font-medium text-csgray-900"
+                        class="text-sm font-medium text-csgray-900 dark:text-csgray-400"
                         id="availability-label">Restart DECK</span
                     >
                     <span
@@ -279,7 +280,7 @@
                 <button
                     on:click={askForRestart}
                     type="button"
-                    class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-blue-600 hover:text-white text-white border border-blue-300 hover:border-transparent bg-white hover:bg-blue-600 focus:outline-none"
+                    class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-blue-600 dark:text-blue-400 hover:text-white border border-blue-300 hover:border-transparent bg-white dark:bg-darkgray-950 hover:bg-blue-600 dark:border-slate-50/[0.06] focus:outline-none"
                 >
                     Restart
                 </button>

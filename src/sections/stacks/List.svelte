@@ -39,7 +39,7 @@
 
 <!-- Secondary column (hidden on smaller screens) -->
 <aside
-    class="min-w-1/4 w-1/4 bg-white dark:bg-darkgray-1000 shadow-sm overflow-y-auto h-screen lg:block"
+    class="min-w-1/4 w-1/4 bg-white dark:bg-darkgray-1000 dark:border-r dark:border-slate-50/[0.06] shadow-sm overflow-y-auto h-screen lg:block "
 >
     {#if stacks.length > 0 || searchTerm !== ""}
         <Search on:termChange={search} bind:searchTerm />
